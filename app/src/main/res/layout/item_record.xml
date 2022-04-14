@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/record_sun"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_margin="10dp"
+            android:src="@drawable/sun"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/record_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体重"
+            android:layout_toRightOf="@+id/record_sun"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/record_weight_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100斤"
+                android:layout_below="@+id/record_weight"
+                android:layout_alignLeft="@+id/record_weight"/>
+
+            <TextView
+                android:id="@+id/record_zhifang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="脂肪"
+                android:layout_toRightOf="@+id/record_weight"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:id="@+id/record_zhifang_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.2"
+                android:layout_below="@+id/record_zhifang"
+                android:layout_alignLeft="@+id/record_zhifang"/>
+
+            <Button
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:background="@mipmap/right_row"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

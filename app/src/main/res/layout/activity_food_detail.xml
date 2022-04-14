@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="view.activity.FoodDetailActivity">
+<!--    -->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white" >-->
+<!--        -->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/food_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="香蕉"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/food_detail_point"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/red_point"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/food_detail_name"/>
+
+        <TextView
+            android:id="@+id/food_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绿灯食物   推荐食用"
+            android:layout_toRightOf="@id/food_detail_point"
+            android:layout_below="@id/food_detail_name"/>
+
+
+        <TextView
+            android:id="@+id/food_detail_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="389千焦"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每100g"
+            android:layout_below="@id/food_detail_energy"
+            android:layout_alignRight="@id/food_detail_energy"
+            android:paddingRight="15dp"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/yingyang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="营养元素"
+            android:textSize="15sp"
+            android:padding="15dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/food_detail_piechart"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/yingyang" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/food_detail_xuetang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="血糖相关"
+                android:textSize="15sp"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/food_detail_gi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gi值"
+                android:layout_below="@+id/food_detail_xuetang"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/food_detail_gl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gi值"
+                android:layout_below="@+id/food_detail_gi1"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/food_detail_gi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="52.0g"
+                android:layout_below="@+id/food_detail_xuetang"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/food_detail_gl_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.8g"
+                android:layout_below="@+id/food_detail_gi1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/food_detail_gi_dsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低GI"
+                android:layout_below="@+id/food_detail_xuetang"
+                android:paddingRight="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/food_detail_gl_dsp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低Gl"
+                android:layout_below="@+id/food_detail_gi1"
+                android:paddingRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

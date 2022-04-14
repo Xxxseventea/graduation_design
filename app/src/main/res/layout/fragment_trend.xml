@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbluc">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_trend"
+        android:layout_width="230dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lineChart"
+        android:background="@drawable/btn_search"
+        android:text="查询食物热量/卡路里"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/food"
+        android:layout_below="@id/lineChart"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

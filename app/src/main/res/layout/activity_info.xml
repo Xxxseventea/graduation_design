@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.activity.InfoActivity"
+    android:background="@color/maintheme"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+
+    <RelativeLayout
+        android:id="@+id/age1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/mainbluc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年龄"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/setting_age"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right_row"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/info_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20岁"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_age"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/height1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/mainbluc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身高"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/setting_height"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right_row"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/info_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="158cm"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_height"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sex1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/mainbluc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/setting_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right_row"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/info_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_sex"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/mainbluc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目标体重"
+            android:layout_margin="15dp"/>
+
+        <ImageView
+            android:id="@+id/setting_weight"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right_row"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/info_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="95斤"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/setting_weight"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btv_record"
+        android:icon="@mipmap/btv_record"
+        android:title="记录" />
+    <item
+        android:id="@+id/btv_trend"
+        android:icon="@mipmap/btv_trend"
+        android:title="趋势" />
+    <item
+        android:id="@+id/btv_video"
+        android:icon="@mipmap/btv_video"
+        android:title="视频" />
+    <item
+        android:id="@+id/btv_mine"
+        android:icon="@mipmap/btv_mine"
+        android:title="个人" />
+</menu>

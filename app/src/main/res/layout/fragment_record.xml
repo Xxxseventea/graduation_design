@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="view.RecordFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/record_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/maintheme">
+        <TextView
+            android:id="@+id/zhifang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="脂肪"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/zhifang_zhifang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.8%"
+            android:layout_below="@+id/zhifang"
+            android:layout_alignLeft="@+id/zhifang"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            >
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60dp"
+                android:text="90" />
+
+            <TextView
+                android:id="@+id/weight_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text=".2"
+                android:layout_alignBottom="@+id/weight"
+                android:layout_toRightOf="@+id/weight"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="斤"
+                android:layout_above="@+id/weight_point"
+                android:layout_toRightOf="@+id/weight_point"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/bmi_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18.1"
+            android:layout_below="@+id/zhifang"
+            android:layout_alignLeft="@+id/BMI"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/record_rv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/record_rl1"
+        android:background="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/record_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/mainbluc"
+        android:src="@drawable/float_btn"
+        app:backgroundTint="@color/mainbluc"
+        />
+</RelativeLayout>

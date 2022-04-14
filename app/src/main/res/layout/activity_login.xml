@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroud"
+    tools:context="view.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lose Weight"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/login_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="减 肥 的 道 路 是 曲 折 的 , 瘦 身 的 前 途 是 光 明 的  。"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/login_text"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/login_et_name"
+            android:layout_width="800px"
+            android:layout_height="100px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="80px"
+            android:hint="请输入邮箱"
+
+            android:textColorHint="#DCDCDC"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:paddingLeft="65px"
+            android:paddingStart="65px"
+            />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:padding="25px"
+            android:layout_alignBottom="@id/login_et_name"
+            android:layout_alignLeft="@id/login_et_name"
+            android:layout_alignStart="@id/login_et_name"
+            android:layout_alignTop="@id/login_et_name"
+            android:src="@mipmap/login_user"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_name"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/login_et_password"
+            android:layout_width="800px"
+            android:layout_height="100px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="80px"
+            android:hint="请输入密码"
+
+            android:inputType="textPassword"
+            android:textColorHint="#DCDCDC"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:paddingLeft="65px"
+            android:paddingStart="65px"
+            />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:padding="25px"
+            android:src="@mipmap/login_password"
+            android:layout_alignBottom="@id/login_et_password"
+            android:layout_alignLeft="@id/login_et_password"
+            android:layout_alignStart="@id/login_et_password"
+            android:layout_alignTop="@id/login_et_password"
+
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_btn"
+        android:layout_below="@+id/remember_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="登 录"/>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_btn"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="注 册"/>
+
+
+    <CheckBox
+        android:id="@+id/remember_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_password"
+        android:layout_alignRight="@+id/rl_password"
+        android:layout_marginTop="10dp"
+        android:text="记住密码" />
+
+
+
+
+</RelativeLayout>

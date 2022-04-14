@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroud"
+    tools:context="view.LoginActivity">
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注 册"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/register_et_name"
+            android:layout_width="800px"
+            android:layout_height="100px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="80px"
+            android:hint="请输入邮箱"
+
+            android:textColorHint="#DCDCDC"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:paddingLeft="65px"
+            android:paddingStart="65px"
+            />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:padding="25px"
+            android:layout_alignBottom="@id/register_et_name"
+            android:layout_alignLeft="@id/register_et_name"
+            android:layout_alignStart="@id/register_et_name"
+            android:layout_alignTop="@id/register_et_name"
+            android:src="@mipmap/login_user"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_name"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="800px"
+            android:layout_height="100px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="80px"
+            android:hint="请输入密码"
+
+            android:inputType="textPassword"
+            android:textColorHint="#DCDCDC"
+            android:textSize="40px"
+            android:textColor="@color/white"
+            android:paddingLeft="65px"
+            android:paddingStart="65px"
+            />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:padding="25px"
+            android:src="@mipmap/login_password"
+            android:layout_alignBottom="@id/register_et_password"
+            android:layout_alignLeft="@id/register_et_password"
+            android:layout_alignStart="@id/register_et_password"
+            android:layout_alignTop="@id/register_et_password"
+
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_btn"
+        android:layout_below="@+id/rl_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="注册"/>
+
+
+
+</RelativeLayout>

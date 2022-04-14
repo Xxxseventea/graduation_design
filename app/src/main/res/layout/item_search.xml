@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    android:id="@+id/search_item">
+
+    <ImageView
+        android:id="@+id/food_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/red_point"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香蕉"
+        android:layout_toRightOf="@+id/food_status"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/food_calory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="510千卡/100g"
+        android:layout_below="@id/food_name"
+        android:layout_toRightOf="@+id/food_status"/>
+
+</RelativeLayout>

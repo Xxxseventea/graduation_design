@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null">
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_number"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:background="@color/white"-->
+<!--            android:minHeight="50dp"-->
+<!--            android:layout_marginBottom="20dp"/>-->
+<!--    </LinearLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="1"
+
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="2"
+
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_1"
+            app:layout_constraintRight_toLeftOf="@id/btn_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_3"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="3"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_2"
+            app:layout_constraintRight_toLeftOf="@id/btn_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="delete"
+            app:layout_constraintBottom_toBottomOf="@id/btn_6"
+            app:layout_constraintLeft_toRightOf="@id/btn_3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_3"
+            app:layout_constraintWidth_percent="0.28" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="4"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_5"
+            app:layout_constraintTop_toBottomOf="@id/btn_1"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="5"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_4"
+            app:layout_constraintRight_toLeftOf="@id/btn_6"
+            app:layout_constraintTop_toBottomOf="@id/btn_1"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="6"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_5"
+            app:layout_constraintRight_toLeftOf="@id/btn_delete"
+            app:layout_constraintTop_toBottomOf="@id/btn_1"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="7"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_8"
+            app:layout_constraintTop_toBottomOf="@id/btn_4"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="8"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_7"
+            app:layout_constraintRight_toLeftOf="@id/btn_9"
+            app:layout_constraintTop_toBottomOf="@id/btn_4"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="9"
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toRightOf="@+id/btn_8"
+            app:layout_constraintRight_toLeftOf="@id/btn_delete"
+            app:layout_constraintTop_toBottomOf="@id/btn_4"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="."
+            app:layout_constraintDimensionRatio="W,3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_8"
+            app:layout_constraintTop_toBottomOf="@id/btn_7"
+            app:layout_constraintWidth_percent="0.22" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/btn_dot"
+            app:layout_constraintLeft_toLeftOf="@id/btn_8"
+            app:layout_constraintRight_toRightOf="@+id/btn_9"
+            app:layout_constraintTop_toTopOf="@id/btn_dot" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="完成"
+
+            android:background="@color/maintheme"
+            app:layout_constraintBottom_toBottomOf="@id/btn_dot"
+            app:layout_constraintLeft_toRightOf="@+id/btn_9"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_9"
+            app:layout_constraintWidth_percent="0.28" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/cl"
+        android:background="@color/white"
+        >
+
+    <EditText
+        android:id="@+id/keyboard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:hint="输入体重(斤)"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+</RelativeLayout>
+
